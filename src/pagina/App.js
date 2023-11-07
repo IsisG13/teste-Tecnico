@@ -3,7 +3,7 @@ import dotlibData from "./dotlib.json";
 import "../App.css";
 import logo from "../ images/logo_dotlib.png";
 import Footer from "./footer";
-import { FaSearch } from "react-icons/fa"
+import { FaSearch, FaSquare } from "react-icons/fa"
 
 function App() {
   const [menu, setMenu] = useState([]);
@@ -68,7 +68,7 @@ function App() {
             <div className="livro" key={book.id}>
               {index % 5 === 0 && index !== 0 && <hr className="gray-line" />}
               <img src={book.image} alt={book.title} />
-              <p>{book.id}.</p>
+              <p><FaSquare style={{ color: "#DEDEDE", padding: "1%"}}/>{book.id}.</p>
               <a href={book.url} target="_blank">
                 <h4>{book.title}</h4>
               </a>
@@ -84,7 +84,9 @@ function App() {
         {categories.map((category) => (
           <div key={category.id}>
             <a href={category.url} target="_blank">
-              <p>{category.title}</p>
+              <p>
+              <FaSquare style={{ color: "#DEDEDE", padding: "0 2px 0 0"}}/>
+                {category.title}</p>
             </a>
           </div>
         ))}
