@@ -21,14 +21,21 @@
   box-shadow: 0 3px 0px #c3c3c3;
   margin-top: -1%;
   width: 14%;
-  height: 27px;
+  height: 23px;
 }
 
 .menu-container button {
   border: 2px solid #9ebc4c;
-  box-shadow: 0 3px 0px #778d3c;
+  box-shadow: 0 5px 0px #778d3c;
   margin-top: -1%;
+  margin-left: -1%;
+  margin-bottom: 6.5%;
   background-color: #9ebc4c;
+  /* border: 2px solid #9ebc4c;
+  box-shadow: 0 5px 0px #778d3c;
+  margin-top: -1%;
+  margin-left: -0.5%;
+  background-color: #9ebc4c; */
 }
 
 .menu-container p {
@@ -87,6 +94,7 @@
 }
 
 .book-container h5 {
+  width: 60%;
   margin-bottom: 5%;
   margin-top: -20%;
   margin-left: 61%;
@@ -114,7 +122,7 @@
   text-decoration-line: none;
   text-decoration-color: #727272;
   width: 13%;
-  margin-top: -44.9%;
+  margin-top: -39.9%;
   margin-left: 12%;
 }
 
@@ -138,7 +146,7 @@
 
 .footer {
   background-color: #e2e2e2;
-  margin: 25.6% 0 0 0;
+  margin: 25.9% 0 0 0;
 }
 
 .footer p {
