@@ -68,7 +68,7 @@ function App() {
             <div className="livro" key={book.id}>
               {index % 5 === 0 && index !== 0 && <hr className="gray-line" />}
               <img src={book.image} alt={book.title} />
-              <p>{book.id}</p>
+              <p>{book.id}.</p>
               <a href={book.url} target="_blank">
                 <h4>{book.title}</h4>
               </a>

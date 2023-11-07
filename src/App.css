@@ -4,19 +4,31 @@
   margin-left: 12%;
 }
 
+.menu {
+  box-shadow: 0px 5px 6px #d1cece66;
+  border-bottom: 2px solid #d9d9d9;
+}
+
 .menu-container {
+  padding: 0 0 1% 0;
   margin-top: -2.5%;
   margin-left: 28.4%;
   display: flex;
 }
 
 .menu-container input {
+  border: 2px solid #c3c3c3;
+  box-shadow: 0 3px 0px #c3c3c3;
+  margin-top: -1%;
   width: 14%;
   height: 27px;
 }
 
 .menu-container button {
-  background-color: #9EBC4C;
+  border: 2px solid #9ebc4c;
+  box-shadow: 0 3px 0px #778d3c;
+  margin-top: -1%;
+  background-color: #9ebc4c;
 }
 
 .menu-container p {
@@ -35,9 +47,11 @@
 }
 
 .gray-line {
-  background-color: #aaaa;
-  margin-top: 20%;
-  width: 1455%;
+    /* box-shadow: 0px 0px 5px #909090; */
+    border-bottom: 2px solid #dbdbdb;
+    background-color: #aaaa;
+    margin-top: 20%;
+    width: 1455%;
 }
 
 .book {
@@ -61,7 +75,7 @@
 
 .book-container h4:hover {
   color: #666666;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .book-container p {
@@ -73,7 +87,7 @@
 .book-container h5 {
   margin-bottom: 5%;
   margin-top: -20%;
-  margin-left: 97%;
+  margin-left: 100%;
   color: #727272;
 }
 
@@ -97,7 +111,7 @@
   text-decoration-line: none;
   text-decoration-color: #727272;
   width: 11%;
-  margin-top: -40%;
+  margin-top: -39.5%;
   margin-left: 12%;
 }
 
@@ -121,7 +135,7 @@
 
 .footer {
   background-color: #e2e2e2;
-  margin: 26.3% 0 0 0;
+  margin: 25.3% 0 0 0;
 }
 
 .footer p {
