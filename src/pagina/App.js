@@ -27,18 +27,18 @@ function App() {
 
   return (
     <div className="App">
-      <div className="navBar">
-        <div className="menu">
-          <div className="logo">
-            <img src={logo} alt="logo dotlib" />
-          </div>
-          <div className="menu-container">
-            {menu &&
-              menu.map((menu) => (
-                <div key={menu.id}>
-                  <p>{menu.title}</p>
-                </div>
-              ))}
+        <div className="navBar">
+          <div className="menu">
+            <div className="logo">
+              <img src={logo} alt="logo dotlib" />
+            </div>
+            <div className="menu-container">
+              {menu &&
+                menu.map((menu) => (
+                  <div key={menu.id}>
+                    <p>{menu.title}</p>
+                  </div>
+                ))}
               <input
                 className="pesquisa"
                 type="text"
@@ -54,47 +54,49 @@ function App() {
                   }}
                 />
               </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="resultados">
-        <h5>Mostrando 1 até 25 de 2399 resultados</h5>
-      </div>
+        <div className="resultados">
+          <h5>Mostrando 1 até 25 de 2399 resultados</h5>
+        </div>
 
-      <div className="book">
-        <div className="book-container">
-          {booksFiltrados.map((book, index) => (
-            <div className="livro" key={book.id}>
-              {index % 5 === 0 && index !== 0 && <hr className="gray-line" />}
-              <img src={book.image} alt={book.title} />
-              <p>
-                <FaSquare style={{ color: "#DEDEDE", padding: "1%" }} />
-                {book.id}.
-              </p>
-              <a href={book.url} target="_blank">
-                <h4>{book.title}</h4>
+        <div className="book">
+          <div className="book-container">
+            {booksFiltrados.map((book, index) => (
+              <div className="livro" key={book.id}>
+                {index % 5 === 0 && index !== 0 && <hr className="gray-line" />}
+                <img src={book.image} alt={book.title} />
+                <p>
+                  <FaSquare style={{ color: "#DEDEDE", padding: "1%" }} />
+                  {book.id}.
+                </p>
+                <a href={book.url} target="_blank">
+                  <h4>{book.title}</h4>
+                </a>
+                <h5>{book.editor}</h5>
+                <p>{book.year}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="categorias">
+          <h2>Assunto</h2>
+          {categories.map((category) => (
+            <div key={category.id}>
+              <a href={category.url} target="_blank">
+                <p>
+                  <FaSquare
+                    style={{ color: "#DEDEDE", padding: "0 2px 0 0" }}
+                  />
+                  {category.title}
+                </p>
               </a>
-              <h5>{book.editor}</h5>
-              <p>{book.year}</p>
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="categorias">
-        <h2>Assunto</h2>
-        {categories.map((category) => (
-          <div key={category.id}>
-            <a href={category.url} target="_blank">
-              <p>
-                <FaSquare style={{ color: "#DEDEDE", padding: "0 2px 0 0" }} />
-                {category.title}
-              </p>
-            </a>
-          </div>
-        ))}
-      </div>
 
       <footer className="footer">
         <Footer />
