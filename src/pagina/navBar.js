@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import dotlibData from "./dotlib.json";
 import "../App.css";
-import logo from "../ images/logo_dotlib.png";
+import logo from "../images/logo_dotlib.png";
 
 function NavBar() {
   const [menu, setMenu] = useState([]);
@@ -24,7 +24,7 @@ function NavBar() {
                 <p>{menu.title}</p>
               </div>
             ))}
-            <input className="pesquisa" type="text" placeholder="busque livros"/>
+            <input className="pesquisa" type="text" placeholder="busque livros" />
         </div>
       </div>
     </div>

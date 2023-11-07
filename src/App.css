@@ -10,6 +10,15 @@
   display: flex;
 }
 
+.menu-container input {
+  width: 14%;
+  height: 27px;
+}
+
+.menu-container button {
+  background-color: #9EBC4C;
+}
+
 .menu-container p {
   margin: 0 18px 0 0;
 }
@@ -46,6 +55,15 @@
   width: 35%;
 }
 
+.book-container a {
+  text-decoration: none;
+}
+
+.book-container h4:hover {
+  color: #666666;
+  font-weight: bold;
+}
+
 .book-container p {
   text-align: center;
   font-size: 89%;
@@ -76,8 +94,20 @@
 }
 
 .categorias {
+  text-decoration-line: none;
+  text-decoration-color: #727272;
+  width: 11%;
   margin-top: -40%;
   margin-left: 12%;
+}
+
+.categorias a {
+  text-decoration: none;
+}
+
+.categorias p:hover {
+  color: #5e5e5e;
+  font-weight: bold;
 }
 
 .categorias h2 {
@@ -91,7 +121,7 @@
 
 .footer {
   background-color: #e2e2e2;
-  margin: 26.4% 0 0 0;
+  margin: 26.3% 0 0 0;
 }
 
 .footer p {
