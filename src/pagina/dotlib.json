@@ -148,16 +148,17 @@
     {
       "id": 21,
       "title": "PESQUISA AVANÇADA",
-      "url": "https://beta.lectio.com.br/showcases/NewArrivals;isSystem=true;title=New%20Arrivals"
-
+      "url": "https://beta.lectio.com.br/explore;searchScope=1;phraseMatch=0;subscriptionStatus=1;mainSearch=1"
     },
     {
       "id": 22,
-      "title": "BASES"
+      "title": "+ LIVROS",
+      "url": "https://beta.lectio.com.br/showcases/NewArrivals;title=New%20Arrivals;isSystem=true"
     },
     {
       "id": 23,
-      "title": "LOGIN"
+      "title": "LOGIN",
+      "url": "https://beta.lectio.com.br/showcases/NewArrivals;isSystem=true;title=New%20Arrivals/login"
     }
   ]
 }

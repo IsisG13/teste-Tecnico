@@ -35,8 +35,10 @@ function App() {
             <div className="menu-container">
               {menu &&
                 menu.map((menu) => (
-                  <div key={menu.id}>
+                  <div className="link" key={menu.id}>
+                    <a href={menu.url} target="_blank">
                     <p>{menu.title}</p>
+                    </a>
                   </div>
                 ))}
               <input
